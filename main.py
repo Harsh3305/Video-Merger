@@ -35,7 +35,7 @@ def get_query_string():
     ip_address = flask.request.remote_addr
     message = (request.query_string).decode("utf-8")
     i = message.index("url1:")
-    j = message.index("url2")
+    j = message.index("url2:")
 
     url1 = message[i + 5:j - 2]
     url2 = message[j + 5:]
@@ -43,7 +43,7 @@ def get_query_string():
     urllib.request.urlretrieve(url1, ip_address+"1.mp4")
     urllib.request.urlretrieve(url2, ip_address+"2.mp4")
     if not firebase_admin._apps:
-        cred = credentials.Certificate("fir-tuturial-a30a1-firebase-adminsdk-otqp0-5bd3729283.json")
+        cred = credentials.Certificate("fir-tuturial-a30a1-firebase-adminsdk-otqp0-73ac050f0d.json")
         firebase_admin.initialize_app(cred, {'storageBucket': 'fir-tuturial-a30a1.appspot.com'})
 
     process_video(ip_address)
