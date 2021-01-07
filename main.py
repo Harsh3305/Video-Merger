@@ -6,8 +6,6 @@ import urllib.request
 import firebase_admin
 from firebase_admin import storage, credentials
 import os
-from datetime import date
-
 
 app = Flask(__name__)
 
@@ -72,4 +70,4 @@ def get_query_string():
 
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)
