@@ -1,7 +1,7 @@
 # Video Merger
 This project is created to merge multiple videos into a single video with the help of [moviepy](https://pypi.org/project/moviepy/).
 
-##prerequisite
+## prerequisite
 
 ```bash
 pip install moviepy
@@ -13,7 +13,7 @@ pip install firebase_admin
 pip install flask
 ```
 
-##How to use it
+## How to use it
 
 Run this project on [local host](http://127.0.0.1:5000/ ) and at address ba type localhost/url?url1:url_of_first_video&&url2:url_of_second_video.
 
