@@ -34,7 +34,7 @@ imageio==2.9.0
 imageio-ffmpeg==0.4.3
 ipaddr==2.2.0
 itsdangerous==1.1.0
-Jinja2==2.11.2
+Jinja2==2.11.3
 lockfile==0.12.2
 MarkupSafe==1.1.1
 moviepy==1.0.3
